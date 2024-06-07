@@ -1,0 +1,154 @@
+/* Define general styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+.topnav {
+    background-color: rgb(26, 30, 31);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.topnav img {
+    margin-right: 10px;
+    height: 40px;
+}
+
+.topnav nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.topnav nav a:hover {
+    color: rgb(0, 163, 224);
+}
+
+div.logo-text p {
+    color: white;
+    margin: 0;
+}
+
+/* Main content styles */
+.content {
+    padding: 20px;
+}
+
+.large-image {
+    position: relative;
+    text-align: center;
+    background-color: rgb(43, 43, 43);
+}
+
+.large-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 42px;
+    color: rgb(244, 244, 244)
+}
+
+.text-overlay p {
+    font-size: 42px;
+    margin: 10px 0;
+    color: rgb(244, 244, 244)
+}
+
+.additional-info {
+    margin-top: 20px;
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+}
+
+.additional-info p {
+    margin-bottom: 10px;
+    line-height: 44.8px;
+    font-size: 28px;
+    font-weight: 400;
+    color: rgb(244, 244, 244);
+}
+
+.additional-info a {
+    color: rgb(9, 174, 239);
+    text-decoration: none;
+}
+
+.additional-info a:hover {
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(9, 174, 239);
+}
+
+/* Container and box styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute space between lines */
+    background-color: rgb(22, 22, 22);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px; /* Add padding to the container */
+}
+
+.box {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust width and margin */
+    margin-bottom: 20px; /* Space between lines */
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff; /* Add border to each box */
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.box h1 {
+    font-size: 1.5em;
+    color: rgb(244, 244, 244);
+}
+
+.box p {
+    font-size: 1em;
+    color: rgb(244, 244, 244);
+}
+
+.box a {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(0, 160, 220);
+    line-height: 25.6px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    text-decoration: none;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        flex: 0 0 calc(100% - 20px);
+        margin-bottom: 20px;
+    }
+}
